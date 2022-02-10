@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registration</title>
+    </head>
+    <body>
+        <script src="style.css"></script>
+        <div class="Form">
+            <form>
+                <p class="header">Registration</p>
+<!--FIRST NAME-->                    
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="FirstName" placeholder="First Name" pattern="^[A-Z]{1}[a-z]{1,}$" required>
+<!--LAST NAME-->
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="LastName" placeholder="Last Name" pattern="^[A-Z]{1}[a-z]{1,}$" required>
+<!--GENDER-->    
+                <label for="gender">Gender: </label>
+                <select id="gender" name="gender" required>
+                        <option selected="" value="Default">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="unspecified">Unspecified</option>
+                </select>
+<!--EMAIL-->
+                <label for="number">Contact Number: </label>
+                <input type="text" id="phone" name="phone" placeholder="Personal Number (nnn-nnn-nnnn)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<!--SUBMIT-->         
+                <input type="submit" id="Submit" name="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
